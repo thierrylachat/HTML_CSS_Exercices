@@ -1,0 +1,101 @@
+/* initialisation du css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* Définition d'une largeur = celle du device */
+    max-width: 100vw;
+    height: auto;
+}
+
+/* Rentre les principaux blocs de la page fexible */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* marge intérieure pour décoller des bords */
+main,
+header {
+    padding: 0 3em;
+}
+
+/* Image bannière */
+
+.ban {
+    width: 100%;
+    height: auto;
+}
+
+/* footer */
+footer {
+    background-color: #858BBF;
+    padding: 20px;
+}
+
+/* Organisation du bloc central */
+
+main {
+    width: 100%;
+    display: flex;
+}
+
+/* éléments flexibles, définition d'un largeur */
+.column {
+    flex-basis: 33%;
+    margin: 0.5em;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+/* Badge */
+
+.badge {
+    display: inline-block;
+    padding: 0.8em;
+}
+
+.badge-primary {
+    background-color: blue;
+}
+
+.badge-danger {
+    background-color: red;
+}
+
+/* Texte */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    line-height: 1.5em;
+}
+
+.badge,
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+article:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: silver;
+    margin-bottom: 5px;
+}
+
+img+.badge {
+    position: relative;
+    bottom: 3em;
+}

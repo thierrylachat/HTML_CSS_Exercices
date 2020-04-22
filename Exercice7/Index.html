@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 7</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+    <form action="index.php">
+        <fieldset>
+            <legend>Votre identité</legend>
+            <label for="lastname" class="form-label">1. Nom :</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Dupont" class="form-input">
+            <label for="firstname" class="form-label">2. Prénom :</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Philippe" class="form-input">
+            <label for="email" class="form-label">3. Adresse mail :</label>
+            <input type="email" id="email" name="email" placeholder="pdupont@outlook.com" class="form-input">
+        </fieldset>
+        <fieldset>
+            <legend>Adresse de livraison</legend>
+            <label for="adress" class="form-label">1. Adresse :</label>
+            <textarea name="adress" id="adress" cols="30" rows="10" placeholder="142 Rue Valentin Hauy"></textarea>
+            <label for="postcode" class="form-label">2. Code postal :</label>
+            <input type="text" id="postcode" name="postcode" placeholder="80000" class="form-input">
+            <label for="city" class="form-label">3. Ville :</label>
+            <input type="text" id="city" name="city" placeholder="Amiens" class="form-input">
+        </fieldset>
+        <fieldset>
+            <legend>Informations de réglement</legend>
+            <span>1. Type de carte bancaire :</span>
+            <input type="radio" id="VISA" name="card-type" value="VISA">
+            <label for="VISA">VISA</label>
+            <input type="radio" id="Mastercard" name="card-type" value="Mastercard">
+            <label for="Mastercard">Mastercard</label>
+            <label for="card-number" class="form-label">2. Numéro de carte :</label>
+            <input type="text" id="card-number" name="card-number" placeholder="3258 XXXX XXXX XXXX">
+            <label for="cryptogram" class="form-label">3. Code de sécurité :</label>
+            <input type="text" id="cryptogram" name="cryptogram" placeholder="368" class="form-input">
+            <label for="owner" class="form-label">4. Nom du titulaire :</label>
+            <input type="text" id="owner" name="owner" placeholder="Dupont" class="form-input">
+        </fieldset>
+        <div>
+            <button type="submit">J'achète !</button>
+        </div>
+     </form>  
+</body>
+</html>
